@@ -3,7 +3,6 @@
 
 1. Convert the necessary measures to dimensions (the variables that are categorical in nature)
 
-**Answer:**
 
 **Credit cards hold,Homes owned,Bank accounts open,Household size** columns are converted to dimension.
 
@@ -61,9 +60,8 @@ With line chart it is more obvious that the difference between accepted and reje
 
 Try and explain that jump. Hint: Check the number of records we have for such customers. Do you see any anomaly?
 
-**Output**
-
-
+**Output**:
+Yes,there is definitely anomaly.Because for the household size of 8,206 average balance seems not real.Most probably it is an outlier.
 
 
 7. Now we want to see how some of the other features In the data might have affected responses from the people. For these we will first start by creating a cross tab. A cross tab is simply a table between two categorical features with some metric of importance filling up the table
@@ -85,11 +83,25 @@ In order to know  which factors play a role  on customers accepting the offer,i 
 
 <img src="../images/acceptance_rate.png" width="500" height="350">
 
-Now putting Acceptance Rate in crosstab with each of column,i can get useful information,how much each factor influence acceptance_rate
+Now looking at the relationship of acceptance Rate with other columns,i can get useful information,how much each factor influence acceptance rate
 
 <img src="../images/barplot_6.png" width="1100" height="800">
 
-What i see from this plots is that,Acceptance Rate has negative correlationship with **Income level,Credit Rating,Household size**
+What i see from this plots is that,Acceptance Rate has negative correlationship with Income level,Credit Rating and Household size.Whether the customers own their own home or not,have no influence on acceptance rate.Although customers not having overdraft protection consist of only 17% of customers having overdraft protection,the acceptance percentage of first one is more(5.71% vs 5.53%).So it is obvious that have to be more interested in the customers with no overdraft protection. 
+
+**Final Output**
+
+So as risk analyst,in the future i would focus on customers with following characteristics:
+
+- Customers with low credit rating
+- Customers with household size 1 or 3
+- Customers with no overdraft protection
+- Customers with low income level
+- Customers having 1 or 2 homes
+- Customers having 1 or 3 credit cards 
+- Customers having 2 accounts in bank
+
+
 
 
 
