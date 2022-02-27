@@ -1,4 +1,6 @@
   ## **Tableau-Classification questions and answers**
+  
+  
   **Question 1**:
 
 1. Convert the necessary measures to dimensions (the variables that are categorical in nature)
@@ -49,7 +51,9 @@ With line chart it is more obvious that the difference between accepted and reje
 
 
 
-6.Consider a similar analysis for Household Size vs average balances for each quarter. You would observe a huge jump in average balance from Q1 to Q2 for households with size 8
+ **Question 6**:
+ 
+ Consider a similar analysis for Household Size vs average balances for each quarter. You would observe a huge jump in average balance from Q1 to Q2 for households  with size 8
 
 
 
@@ -61,24 +65,51 @@ With line chart it is more obvious that the difference between accepted and reje
 Try and explain that jump. Hint: Check the number of records we have for such customers. Do you see any anomaly?
 
 **Output**:
+
 Yes,there is definitely anomaly.Because for the household size of 8,206 average balance seems not real.Most probably it is an outlier.
 
 
-7. Now we want to see how some of the other features In the data might have affected responses from the people. For these we will first start by creating a cross tab. A cross tab is simply a table between two categorical features with some metric of importance filling up the table
+ **Question 7**:
+ 
+ Now we want to see how some of the other features In the data might have affected responses from the people. For these we will first start by creating a cross tab. A cross tab is simply a table between two categorical features with some metric of importance filling up the table
 
 
 - Create a cross tab between Offer Accepted and Overdraft Protection and fill the table with number of records. Do you observe any trend here?
 - Create a cross tab between Offer Accepted and Mailer Type and fill the table with number of records. Do you observe any trend here?
 - Create a cross tab between Offer Accepted and Credit Rating and fill the table with number of records. Rearrange the column credit rating from low to high. Do you observe any trend here?
 
-<img src="../images/crosstab_1.png" width="500" height="350">
+ **Output**:
+ 
+ **Few people have overdraft protection and few people accept the offer.Overdraft Protection doesnt have influence on acceptance**
 
-<img src="../images/crosstab_2.png" width="500" height="350">
+<img src="../images/crosstab_1.png" width="500" height="250">
+
+**Postcard mailers have much greater acceptance**
+
+<img src="../images/crosstab_2.png" width="500" height="250">
+
+**Credit Rating have negativ corelation with acceptance**
 
 
-<img src="../images/crosstab_3.png" width="500" height="350">
+<img src="../images/crosstab_3.png" width="500" height="250">
 
-**Output**
+
+ **Question 8**:
+ 
+ Based on the average balance for each customer, create four buckets : Category A, Category B, Category C, and Category D. Conduct a further deep dive into each of the categories and identify the possible trends
+
+<img src="../images/barplot_7.png" width="600" height="500">
+
+**Output**:
+
+I divided Average Balance into 4 bins with bin size 500.Now we can see that there are 8718 customers with average balance between 0-500,6212 customers between 500-1000,2531 customers between 1000-1500 and 505 customers between 1500-2000.
+6 customers with average balance 2000-2500,3 customers between 2500-3000 and 1 customer between 2500-3000 are outliers,so i will filter them
+
+<img src="../images/barplot_8.png" width="600" height="500">
+
+
+**Diving deep into data**:
+
 In order to know  which factors play a role  on customers accepting the offer,i created Acceptance Rate variable as follows:
 
 <img src="../images/acceptance_rate.png" width="500" height="350">
@@ -87,9 +118,9 @@ Now looking at the relationship of acceptance Rate with other columns,i can get 
 
 <img src="../images/barplot_6.png" width="1100" height="800">
 
-What i see from this plots is that,Acceptance Rate has negative correlationship with Income level,Credit Rating and Household size.Whether the customers own their own home or not,have no influence on acceptance rate.Although customers not having overdraft protection consist of only 17% of customers having overdraft protection,the acceptance percentage of first one is more(5.71% vs 5.53%).So it is obvious that have to be more interested in the customers with no overdraft protection. 
+What I see from this plots is that, Acceptance Rate has negative correlation with Income level, Credit Rating and Household size. Whether the customers own their own home or not, have no influence on acceptance rate. Although customers not having overdraft protection consist of only 17% of customers having overdraft protection, the acceptance percentage of first one is more(5.71% vs 5.53%). So it is obvious that we should be more interested in the customers with no overdraft protection. 
 
-**Final Output**
+**Final Output**:
 
 So as risk analyst,in the future i would focus on customers with following characteristics:
 
@@ -100,9 +131,15 @@ So as risk analyst,in the future i would focus on customers with following chara
 - Customers having 1 or 2 homes
 - Customers having 1 or 3 credit cards 
 - Customers having 2 accounts in bank
+- Postcard sendings have much more acceptance rate.So in future it would be better to give more priority to use postcards on offers
+- 
 
 
 
 
 
-8.Based on the average balance for each customer, create four buckets : Category A, Category B, Category C, and Category C. Conduct a further deep dive into each of the categories and identify the possible trends.  
+
+
+
+
+
