@@ -105,7 +105,7 @@ Yes,there is definitely anomaly.Because for the household size of 8,206 average 
 I divided Average Balance into 4 bins with bin size 500.Now we can see that there are 8718 customers with average balance between 0-500,6212 customers between 500-1000,2531 customers between 1000-1500 and 505 customers between 1500-2000.
 6 customers with average balance 2000-2500,3 customers between 2500-3000 and 1 customer between 2500-3000 are outliers,so i will filter them
 
-<img src="../images/barplot_8.png" width="600" height="500">
+<img src="../images/barplot_8.png" width="500" height="350">
 
 
 **Diving deep into data**:
