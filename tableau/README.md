@@ -2,7 +2,7 @@
   
   **Notes**:
   - To see my Tableau work,plese see (https://public.tableau.com/app/profile/aysel.rasulova)
-  - Original data was cleaned and imported to another excel file to work on Tableau
+  - Original data was cleaned and imported to another csv file to work on Tableau
   
   
   **Question 1**:
