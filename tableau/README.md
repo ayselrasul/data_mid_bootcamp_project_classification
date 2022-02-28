@@ -60,7 +60,6 @@ With line chart it is more obvious that the difference between accepted and reje
  Consider a similar analysis for Household Size vs average balances for each quarter. You would observe a huge jump in average balance from Q1 to Q2 for households  with size 8
 
 
-
 <img src="../images/barplot_3.png" width="1100" height="550">
 
 
