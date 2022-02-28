@@ -7,6 +7,7 @@
 ## Table of contents
 - Data.
 - General information
+- Objectives
 - Technologies
 - Business analytic approach
 - Recommendations
@@ -63,3 +64,37 @@ Help the senior management to understand their customers better.
 - MySQL
 - Python
 - Tableau
+
+## Business analytic approach
+
+### Data cleaning:
+
+- Column headers were renamed
+- There was few (less than 0.01% )Null values in Average Balance,Q1 Balance,Q2 Balance,Q3 Balance and Q4 Balance columns.I have dropped them from Data
+- After transforming data to new csv file for SQL and Tableau **customer_number** column was dropped
+
+
+### Data exploration:
+
+- There was class imbalance in Offer Accepted, in Overdraft Protection, Homes Owned, Bank Accounts Open
+- There was high collinearity between Average Balance - Q2 Balance and Average Balance - Q3 Balance
+- Acceptance Rate has negative correlation with Income level, Credit Rating and Household size. 
+- Whether the customers own their own home or not, have no influence on acceptance rate.
+- Average Balance does not affect Acceptance Rate
+
+### Data pre-prossing:
+
+- Data was splitted into categorical and numerical data
+- Numerical data was splitted into continious and discrete columns
+- Data was splitted into target and features,train and test
+- Continious columns were scaled
+- Categorical columns were encoded
+- Training dataset was balanced
+
+### Data prediction:
+- Baseline model performance with minimum tranformations was checked
+-
+-
+-
+-
+-
