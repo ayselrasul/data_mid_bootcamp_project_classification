@@ -69,7 +69,7 @@ Try and explain that jump. Hint: Check the number of records we have for such cu
 
 **Output**:
 
-Yes,there is definitely anomaly.Because for the household size of 8,206 average balance seems not real.Most probably it is an outlier.
+There is only one record in data with household size of 8.In the first quarter balance for this customer is much below the average,while in other quarters it increases significantly.Maybe in first quarter this customer was new in bank and didnt use this bank account constantly.
 
 
  **Question 7**:
