@@ -92,8 +92,11 @@ Help the senior management to understand their customers better.
 - Training dataset was balanced
 
 ### Data prediction:
+- As classifing model Logistic Regression,KNN Classifier,Random Forest,Decision Tree models were used
 - Baseline model performance with minimum tranformations was checked
--
+- Discrete columns were normalized and metrics were checked again,no significant improvement
+- 
+- 
 -
 -
 -

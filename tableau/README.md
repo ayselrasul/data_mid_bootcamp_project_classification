@@ -1,7 +1,8 @@
   ## **Tableau-Classification questions and answers**
   
   **Notes**:
-  - To see my Tableau work,plese see (https://public.tableau.com/app/profile/aysel.rasulova/viz/Mid_term_project_classification/Story1?publish=yes)
+  - To see my Tableau work,plese see (https://public.tableau.com/app/profile/aysel.rasulova/viz/Mid_term_project_classification/Story1?publish=yes).Plaease see visualisations in full-screen mode
+  
   - Original data was cleaned and imported to another csv file to work on Tableau
   
   
@@ -21,7 +22,7 @@
  **Question 3**:
  
  Do a quick table calculation on the previous plot to check percentage of total for both yes and no
-<img src="../images/barplot_1.png" width="900" height="400">
+<img src="../images/Tableau/barplot_1.png" width="900" height="400">
 
  **Question 4**:
  
@@ -35,7 +36,7 @@
 You used different sheets to create the individual plots mentioned before. Now we want to see all the four plots together on the same sheet. The plots should have the same detail as before. Do you observe any trend here?
 
 
-<img src="../images/barplot_2.png" width="900" height="400">
+<img src="../images/Tableau/barplot_2.png" width="900" height="400">
 
 **Output**:
 Both the customers who accepted and rejected offer have the least balance at the end of year(Q4)
@@ -48,7 +49,7 @@ Both the customers who accepted and rejected offer have the least balance at the
  
  Now for all the plots, change the style of the plot from bar chart to a line chart. Do you think it improves the visibility of the data
  
-<img src="../images/line_chart.png" width="1100" height="550">
+<img src="../images/Tableau/line_chart.png" width="1100" height="550">
 
 **Output**:
 With line chart it is more obvious that the difference between accepted and rejected customers was maximum in first quarter(Q1)
@@ -60,7 +61,7 @@ With line chart it is more obvious that the difference between accepted and reje
  Consider a similar analysis for Household Size vs average balances for each quarter. You would observe a huge jump in average balance from Q1 to Q2 for households  with size 8
 
 
-<img src="../images/barplot_3.png" width="1100" height="550">
+<img src="../images/Tableau/barplot_3.png" width="1100" height="550">
 
 
 
@@ -69,7 +70,7 @@ Try and explain that jump. Hint: Check the number of records we have for such cu
 
 **Output**:
 
-Yes,there is definitely anomaly.Because for the household size of 8,206 average balance seems not real.Most probably it is an outlier.
+There is only one record in data with household size of 8.In the first quarter balance for this customer is much below the average,while in other quarters it increases significantly.Maybe in first quarter this customer was new in bank and didnt use this bank account constantly.
 
 
  **Question 7**:
@@ -85,41 +86,41 @@ Yes,there is definitely anomaly.Because for the household size of 8,206 average 
  
  **Few people have overdraft protection and few people accept the offer.Overdraft Protection doesnt have influence on acceptance**
 
-<img src="../images/crosstab_1.png" width="500" height="250">
+<img src="../images/Tableau/crosstab_1.png" width="500" height="250">
 
 **Postcard mailers have much greater acceptance**
 
-<img src="../images/crosstab_2.png" width="500" height="250">
+<img src="../images/Tableau/crosstab_2.png" width="500" height="250">
 
 **Credit Rating have negativ corelation with acceptance**
 
 
-<img src="../images/crosstab_3.png" width="500" height="250">
+<img src="../images/Tableau/crosstab_3.png" width="500" height="250">
 
 
  **Question 8**:
  
  Based on the average balance for each customer, create four buckets : Category A, Category B, Category C, and Category D. Conduct a further deep dive into each of the categories and identify the possible trends
 
-<img src="../images/barplot_7.png" width="600" height="500">
+<img src="../images/Tableau/barplot_7.png" width="600" height="500">
 
 **Output**:
 
 I divided Average Balance into 4 bins with bin size 500.Now we can see that there are 8718 customers with average balance between 0-500,6212 customers between 500-1000,2531 customers between 1000-1500 and 505 customers between 1500-2000.
 6 customers with average balance 2000-2500,3 customers between 2500-3000 and 1 customer between 2500-3000 are outliers,so i will filter them
 
-<img src="../images/barplot_8.png" width="500" height="350">
+<img src="../images/Tableau/barplot_8.png" width="500" height="350">
 
 
 **Diving deep into data**:
 
 In order to know  which factors play a role  on customers accepting the offer,i created Acceptance Rate variable as follows:
 
-<img src="../images/acceptance_rate.png" width="500" height="350">
+<img src="../images/Tableau/acceptance_rate.png" width="500" height="350">
 
 Now looking at the relationship of acceptance Rate with other columns,i can get useful information,how much each factor influence acceptance rate
 
-<img src="../images/barplot_6.png" width="1100" height="800">
+<img src="../images/Tableau/barplot_6.png" width="1100" height="800">
 
 What I see from this plots is that, Acceptance Rate has negative correlation with Income level, Credit Rating and Household size. Whether the customers own their own home or not, have no influence on acceptance rate. Although customers not having overdraft protection consist of only 17% of customers having overdraft protection, the acceptance percentage of first one is more(5.71% vs 5.53%). So it is obvious that we should be more interested in the customers with no overdraft protection. 
 
