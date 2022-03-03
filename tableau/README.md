@@ -1,7 +1,7 @@
   ## **Tableau-Classification questions and answers**
   
   **Notes**:
-  - To see my Tableau work,plese see (https://public.tableau.com/app/profile/aysel.rasulova/viz/Mid_term_project_classification/Story1?publish=yes).Plaease see visualisations in full-screen mode
+  - To see my Tableau work,plese see (https://public.tableau.com/app/profile/aysel.rasulova/viz/Mid_term_project_classification/Story1?publish=yes)
   
   - Original data was cleaned and imported to another csv file to work on Tableau
   
