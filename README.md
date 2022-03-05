@@ -101,6 +101,7 @@ Help the senior management to understand their customers better.
 - As final methods,removing outliers,adding features and balancing train data were selected,LR remained constant,KNN classifier and tree models increased
 
 ### Observation:
--In all methods LR remained constant,but still has highest score,so it is best model that fits data
+
+- In all methods LR remained constant,but still has highest score,so it is best model that fits data
 -
 -
