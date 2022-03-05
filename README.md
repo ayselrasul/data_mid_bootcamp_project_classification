@@ -103,5 +103,3 @@ Help the senior management to understand their customers better.
 ### Observation:
 
 - In all methods LR remained constant,but still has highest score,so it is best model that fits data
--
--
