@@ -94,10 +94,12 @@ Help the senior management to understand their customers better.
 ### Data prediction:
 - As classifing model Logistic Regression,KNN Classifier,Random Forest,Decision Tree models were used
 - Baseline model performance with minimum tranformations was checked
-- Discrete columns were normalized and metrics were checked again,no significant improvement
-- 
-- 
--
--
--
--
+- Collinearity removed and metrics checked,no significant improvement
+- Numerical columns were transformed with log transformation,no significant improvement
+- Adding some features improved Tree based models,LR remained constant,KNN score dropped a bit 
+- Removing outliers decreased auc performance of tree based models,but increased KNN performance
+- As final methods,removing outliers,adding features and balancing train data were selected,LR remained constant,KNN classifier and tree models increased
+
+### Observation:
+
+- In all methods LR remained constant,but still has highest score,so it is best model that fits data
